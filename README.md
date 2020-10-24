@@ -1,2 +1,2 @@
-# Equipo-Metodolog-as
+# Equipo-Metodologías
 Proyecto Licorería
