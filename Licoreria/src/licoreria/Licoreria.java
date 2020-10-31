@@ -10,7 +10,7 @@ public class Licoreria extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXMLLicoreria.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("IniciarSesion.fxml"));
         
         Scene scene = new Scene(root);
         
