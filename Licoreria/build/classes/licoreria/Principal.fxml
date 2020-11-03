@@ -17,17 +17,17 @@
                   <Font name="Bernard MT Condensed" size="50.0" />
                </font>
             </Label>
-            <Button fx:id="cerrarSesionBtn" layoutX="16.0" layoutY="15.0" mnemonicParsing="false" text="Cerrar Sesión" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
+            <Button fx:id="cerrarSesionBtn" onMouseClicked="#cerrarSesion" layoutX="16.0" layoutY="15.0" mnemonicParsing="false" text="Cerrar Sesión" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="15.0">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="productosBtn" layoutX="98.0" layoutY="133.0" mnemonicParsing="false" text="PRODUCTOS" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="125.0">
+            <Button fx:id="productosBtn" onMouseClicked="#irProducto" layoutX="98.0" layoutY="133.0" mnemonicParsing="false" text="PRODUCTOS" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="400.0" AnchorPane.topAnchor="125.0">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="empleadosBtn" layoutX="403.0" layoutY="134.0" mnemonicParsing="false" text="EMPLEADOS" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="125.0">
+            <Button fx:id="empleadosBtn" onMouseClicked="#irEmpleado" layoutX="403.0" layoutY="134.0" mnemonicParsing="false" text="EMPLEADOS" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="125.0">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
