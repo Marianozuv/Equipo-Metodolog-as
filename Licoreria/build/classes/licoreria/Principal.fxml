@@ -32,7 +32,7 @@
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="reporteInventarioBtn" layoutX="16.0" layoutY="193.0" mnemonicParsing="false" text="GENERAR REPORTE INVENTARIO" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="350.0">
+            <Button fx:id="reporteInventarioBtn" onMouseClicked="#crearReporteInven" layoutX="16.0" layoutY="193.0" mnemonicParsing="false" text="GENERAR REPORTE INVENTARIO" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="350.0">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
