@@ -23,6 +23,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 public class FXMLConsultarController implements Initializable{
+    @FXML
     public void agregar(MouseEvent event) throws IOException{
         Parent root; 
         root = FXMLLoader.load(getClass().getClassLoader().getResource("producto/DatosProducto.fxml"));
@@ -33,6 +34,7 @@ public class FXMLConsultarController implements Initializable{
         // Hide this current window (if this is what you want)
         ((Node)(event.getSource())).getScene().getWindow().hide(); 
     }
+    @FXML
     public void regresar(MouseEvent event) throws IOException{
         Parent root; 
         root = FXMLLoader.load(getClass().getClassLoader().getResource("licoreria/Principal.fxml"));
