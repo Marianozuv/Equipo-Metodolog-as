@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="producto.FXMLConsultarController">
+<VBox prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="producto.FXMLConsultarController" fx:controller="producto.TableController">
   <children>
     <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="-1.0" prefWidth="-1.0" style="-fx-background-color: #D7CCC8;" VBox.vgrow="ALWAYS">
          <children>
@@ -19,19 +18,18 @@
                   <Font name="Bernard MT Condensed" size="50.0" />
                </font>
             </Label>
-            <ListView fx:id="productosListView" layoutX="14.0" layoutY="88.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0" />
             <TextField fx:id="buscarProductoTf" layoutX="187.0" layoutY="125.0" AnchorPane.leftAnchor="700.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
             <Button fx:id="buscarProductoBtn" layoutX="411.0" layoutY="195.0" mnemonicParsing="false" text="Buscar" AnchorPane.leftAnchor="700.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="50.0">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="cerrarBtn" onMouseClicked="#regresar" layoutX="192.0" layoutY="338.0" mnemonicParsing="false" text="Cerrar" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="750.0">
+            <Button fx:id="cerrarBtn" layoutX="192.0" layoutY="338.0" mnemonicParsing="false" onMouseClicked="#regresar" text="Cerrar" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="750.0">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
-            <Button fx:id="registroProductoBtn" onMouseClicked="#agregar" layoutX="66.0" layoutY="423.0" mnemonicParsing="false" text="Registro" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="425.0">
+            <Button fx:id="registroProductoBtn" layoutX="66.0" layoutY="423.0" mnemonicParsing="false" onMouseClicked="#agregar" text="Registro" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="375.0" AnchorPane.rightAnchor="425.0">
                <font>
                   <Font name="Arial" size="14.0" />
                </font>
@@ -51,6 +49,14 @@
                   <Font name="Arial" size="14.0" />
                </font>
             </Button>
+            <TableView id="table" layoutX="42.0" layoutY="111.0" prefHeight="376.0" prefWidth="816.0">
+              <columns>
+                <TableColumn fx:id="col_nombre" prefWidth="75.0" text="Nombre" />
+                <TableColumn fx:id="col_marca" prefWidth="75.0" text="Marca" />
+                <TableColumn fx:id="col_precio" prefWidth="75.0" text="Precio" />
+                <TableColumn fx:id="col_cantidad" prefWidth="75.0" text="Cantidad" />
+              </columns>
+            </TableView>
          </children>
     </AnchorPane>
   </children>
