@@ -8,7 +8,7 @@
   </information>
   <resources>
     <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
-    <jar href="Licoreria.jar" size="20804" download="eager" />
+    <jar href="Licoreria.jar" size="184478" download="eager" />
     <jar href="lib\iText-5.0.5.jar" size="1599728" download="eager" />
     <jar href="lib\mysql-connector-java-5.1.23-bin.jar" size="834126" download="eager" />
   </resources>
